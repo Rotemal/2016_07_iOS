@@ -31,6 +31,33 @@ if(today == .Sunday){
     print("have a nice week");
 }
 
+var arr:[String] = [String]();
+arr.append("hello");
+arr.append(" ");
+arr.append("world");
+for s in arr{
+    print(s);
+}
+for var i=0; i<arr.count; i++ {
+    print(arr[i]);
+}
+var arr2 = ["a", "b", "c", 3];
+
+arr2.append(5);
+
+var t: AnyObject = "a";
+t = 5;
+
+var arr3 = arr;
+arr[0] = "hi";
+arr3[0] = "hi";
+for s in arr3{
+    print(s);
+}
+var s = "hi";
+s += " bye";
+
+
 
 
 
