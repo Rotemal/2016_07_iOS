@@ -108,7 +108,71 @@ func sortArray(inout arr:[AnyObject], compare:(AnyObject, AnyObject)->Bool){
 
 
 var numbers:[AnyObject] = [345,123,55,234,886,12];
-sortArray(&numbers, compare: compareIntegers);
+//sortArray(&numbers, compare: compareIntegers);
+sortArray(&numbers, compare: { (x: AnyObject, y: AnyObject) -> Bool in
+    let a = x as! Int;//casting
+    let b = y as! Int;
+    
+    return a > b;
+});
 
+
+
+func myFunc2()->Bool{
+    return true;
+}
+
+var myVar = {()->Bool in print("inside closure"); return true;};
+myVar = myFunc2;
+//myVar();
+
+struct Student{
+    var firstName = "";
+    var lastName = "";
+    var classRoom = 0;
+    
+    func printStudent(){
+        print("my name is \(firstName) \(lastName)");
+    }
+    
+    
+    mutating func setFirstName(firstName: String){
+        self.firstName = firstName;
+    }
+}
+
+var s1 = Student();
+s1.firstName = "John";
+var s2 = s1;
+s1.firstName = "Adam";
+print(s2.firstName);
+
+
+class Dog {
+    var name:String = "";
+    
+    func setName(name: String){
+        self.name = name;
+    }
+}
+
+
+var canvas:[[Bool]] = [[Bool]]();
+for _ in 0..<20{
+    var row = [Bool]();
+    for _ in 0..<40{
+        row.append(false);
+    }
+    canvas.append(row);
+}
+
+var dog1 = Dog();
+dog1.name = "snoopy";
+var dog2 = dog1;
+if(dog1 === dog2){ //reference comparsion
+    print("dog1 and dog2 are equal");
+}else{
+    print("dog1 and dog2 are NOT equal");
+}
 
 
