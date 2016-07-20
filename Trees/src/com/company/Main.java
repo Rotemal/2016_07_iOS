@@ -28,6 +28,29 @@ class Node{
     }
 
     public int maxValue(){
-        return 0;
+        int max = value;
+        if(right != null){
+            int maxRight = right.maxValue();
+            if(maxRight > max)
+                max = maxRight;
+        }
+        if(left != null){
+            int maxLeft = left.maxValue();
+            if(maxLeft > max)
+                max = maxLeft;
+        }
+        return max;
     }
+
+    public int sum(){
+        int sum = value;
+        if(right != null){
+            sum += right.sum();
+        }
+        if(left != null)
+            sum+= left.sum();
+        return sum;
+    }
+
+
 }

@@ -64,10 +64,11 @@ func remainder(x: Int, y: Int)->Int?{
     
 }
 
-
+/*
 var x = 8;
 let y = x+=1;
 print(y);
+*/
 
 func division(x: Int, y: Int)->(Int,Int)?{
     if(y==0){
@@ -184,6 +185,83 @@ func averageNum(nums:[Int])->Double?{
     }
     return Double(sum) / Double(nums.count);
 }
+
+
+func subArray(arr1:[Int], arr2:[Int])->Bool{
+    if(arr2.count == 0){
+        return true;
+    }
+    var match: Bool;
+    for var i = 0; i <= arr1.count - arr2.count; i++ {
+        if(arr1[i] == arr2[0]){
+            match = true;
+            for var j=1; j<arr2.count; j++ {
+                if(arr1[i+j] != arr2[j]){
+                    match = false;
+                    break;
+                }
+            }
+            if(match){
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+func drawRectangle(x: Int, y: Int, width: Int, height: Int){
+    for _ in 0..<y{
+        print();
+    }
+    for i in 0..<height{
+        var line = "";
+        for _ in 0..<x{
+            line += " ";
+        }
+        for j in 0..<width{
+            let isFrame = i==0 || i==height-1 || j==0 || j==width-1;
+            line += isFrame ? "*" : " ";
+        }
+        print(line);
+    }
+}
+
+
+func drawRectangle2(x: Int, y: Int, width: Int, height: Int){
+    for _ in 0..<y{
+        print();
+    }
+    var firstAndLastLine = "";
+    for _ in 0..<x{
+        firstAndLastLine += " ";
+    }
+    for _ in 0..<width{
+        firstAndLastLine += "*";
+    }
+    print(firstAndLastLine);
+    for _ in 0..<height{
+        var line = "";
+        for _ in 0..<x{
+            line += " ";
+        }
+        line += "*";
+        for _ in 0..<width-2{
+            line += " ";
+        }
+        line += "*";
+        print(line);
+    }
+    print(firstAndLastLine);
+}
+
+//drawRectangle(4, y: 5, width: 20, height: 10);
+//drawRectangle(7, y: 8, width: 20, height: 10);
+
+
+
+
+
+
 
 
 
