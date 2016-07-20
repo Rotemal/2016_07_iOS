@@ -175,6 +175,14 @@ class Canvas {
         
     }
     
+    func drawX(size: Int){
+        
+    }
+    
+    func drawCircle(a: Int, b: Int, radius: Int){
+        
+    }
+    
     func paint(){
         
     }
