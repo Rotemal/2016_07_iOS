@@ -157,14 +157,32 @@ class Dog {
 }
 
 
-var canvas:[[Bool]] = [[Bool]]();
-for _ in 0..<20{
-    var row = [Bool]();
-    for _ in 0..<40{
-        row.append(false);
+
+class Canvas {
+    var canvas:[[Bool]];
+    init(){
+        canvas = [[Bool]]();
+        for _ in 0..<20{
+            var row = [Bool]();
+            for _ in 0..<40{
+                row.append(false);
+            }
+            canvas.append(row);
+        }
     }
-    canvas.append(row);
+    
+    func drawRectangle(x: Int, y: Int, width: Int, height: Int){
+        
+    }
+    
+    func paint(){
+        
+    }
+    
 }
+let c = Canvas();
+
+
 
 var dog1 = Dog();
 dog1.name = "snoopy";
