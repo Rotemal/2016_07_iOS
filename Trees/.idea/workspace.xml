@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3f0edc86-9e0f-476e-97aa-376614af66bb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Learning Functions - Step 1/Learning Functions - Step 1.xcodeproj/project.xcworkspace/xcuserdata/eladlavi.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/../Learning Functions - Step 1/Learning Functions - Step 1.xcodeproj/project.xcworkspace/xcuserdata/eladlavi.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Learning Swift - Lesson 03/Learning Swift - Lesson 03.xcodeproj/project.xcworkspace/xcuserdata/eladlavi.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/../Learning Swift - Lesson 03/Learning Swift - Lesson 03.xcodeproj/project.xcworkspace/xcuserdata/eladlavi.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Learning Swift - Lesson 03/Learning Swift - Lesson 03/main.swift" afterPath="$PROJECT_DIR$/../Learning Swift - Lesson 03/Learning Swift - Lesson 03/main.swift" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Main.java" afterPath="$PROJECT_DIR$/src/com/company/Main.java" />
     </list>
     <ignored path="Trees.iws" />
@@ -29,9 +30,11 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.69283277">
-              <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
-              <folding />
+            <state vertical-scroll-proportion="0.31740615">
+              <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -147,11 +150,12 @@
       <updated>1468759041249</updated>
       <workItem from="1468759042693" duration="893000" />
       <workItem from="1468995135317" duration="785000" />
+      <workItem from="1469001784961" duration="482000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1678000" />
+    <option name="totallyTimeSpent" value="2160000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="997" extended-state="6" />
@@ -181,6 +185,14 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -193,15 +205,29 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.69283277">
-          <caret line="51" column="19" selection-start-line="51" selection-start-column="19" selection-end-line="51" selection-end-column="19" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31740615">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
