@@ -51,6 +51,8 @@ class Person{
     }
     
     var stam = "";
+    
+    
     subscript(index: Int) ->String{
         get{
             return stam;
@@ -59,6 +61,24 @@ class Person{
             stam = newValue;
         }
     }
+    
+    subscript(index: String) ->String{
+        get{
+            return stam;
+        }
+        set{
+            stam = newValue;
+        }
+    }
+    
+    
+    func get(index: Int)->String{
+        return stam;
+    }
+    func set(index: Int, newValue: String){
+        stam = newValue;
+    }
+    
     
     
     static func printCounter(){
