@@ -36,11 +36,49 @@ linkedList.add("how");
 linkedList.add("are");
 linkedList.add("you");
 linkedList[1] = "How";
+print(linkedList.size);
 print(linkedList[2]);
-/*
+linkedList.removeAt(2);
+print("all items:");
 linkedList.runOnAll { (value: String) in
     print(value);
 }
-*/
 
+print("isEqual \(linkedList.isEqual(linkedList))");
+
+
+let s3: NSString = "Elad";
+let s4: NSString = "Elad";
+
+
+let s1 = "elad";
+let s2 = "Elad";
+if(s3 == s4){
+    print("s3==s4");
+}else{
+    print("s3!=s4");
+}
+
+print("again all items:");
+linkedList.resetNext();
+while(true){
+    if let theValue = linkedList.next() {
+        print(theValue);
+    }else{
+        break;
+    }
+}
+linkedList.resetNext();
+var s:String?;
+/*
+while((s = linkedList.next()) != nil){
+    
+}
+ */
+while let theValue = linkedList.next() {
+    print(theValue);
+}
+
+var e1:Person = Employee();
+print(e1.description());
 

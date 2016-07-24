@@ -105,3 +105,15 @@ class Dog{
 }
 
 
+class Employee: Person {
+    var employeeNumber: Int = 123;
+    var hourlyRate = 35.00;
+    
+    override func description() -> String {
+        return super.description() + " My employee number is \(employeeNumber)";
+    }
+}
+
+
+
+
