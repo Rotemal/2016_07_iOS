@@ -10,7 +10,7 @@ import Foundation
 
 
 
-
+/*
 class Employee: Person{
     var employeeNumber = 1234567;
     var hourlyRate = 33.0;
@@ -88,9 +88,91 @@ b = nil;
 */
 
 
+public class Shape{
+    var pricePerUnit: Double = 0;
+    func area()->Double{
+        return 0.0;
+    }
+    func getTotalPrice()->Double{
+        return area()*pricePerUnit;
+    }
+}
+public class Square: Shape {
+    var side: Double = 0;
+    override func area() -> Double {
+        return side * side;
+    }
+}
+
+let s = Square();
+s.pricePerUnit = 10;
+s.side = 10;
+print(s.getTotalPrice());
 
 
+extension Person{
+    func printYourSelf(){
+        print(self.description());
+    }
+}
+p1.printYourSelf();
+let myString = "hello";
+let myString2 = "hi";
+extension String{
+    func printIt(){
+        print(self);
+    }
+    
+}
+myString.printIt();
+myString2.printIt();
+*/
 
+/*
+class MySuperClass {
+    
+}
+
+protocol MyProtocol{
+    func someFunc();
+}
+
+class MyClass: MySuperClass, MyProtocol {
+    
+    func someFunc() {
+        print("some func");
+    }
+    
+}
+let p = MyClass();
+
+
+class MyOtherClass {
+    var delegate : MyProtocol?;
+    
+    func SomethingHappened(){
+        print("something happened");
+        if let theDelegate = delegate{
+            theDelegate.someFunc();
+        }
+    }
+    
+}
+
+let myOtherClass = MyOtherClass();
+myOtherClass.delegate = p;
+*/
+let p = Project();
+p.name = "Cook Dinner";
+
+let taskNames = ["Choose Menu", "Buy Groceries", "Prepare Ingredients", "Cook Food"];
+
+
+for name in taskNames{
+    let t = Task();
+    t.name = name;
+    p.listOfTasks.append(t);
+}
 
 
 
