@@ -8,15 +8,37 @@
 
 import Foundation
 
-class Project {
+class Project: TaskCompletedDelegate {
     var name = "";
     var listOfTasks = [Task]();
+    var completedCounter = 0;
     func projectCompleted(){
         print("project \(self.name) is completed.");
     }
+    
+    func taskCompleted(task: Task) {
+        completedCounter++;
+        if completedCounter == listOfTasks.count{
+            projectCompleted();
+        }
+    }
+    
 }
 
 class Task{
     var name = "";
-    var done = false;
+    var delegate: TaskCompletedDelegate?;
+    private var _done = false;
+    func done(){
+        _done = true;
+        if let theDelegate = delegate{
+            theDelegate.taskCompleted(self);
+            delegate = nil;
+        }
+    }
 }
+
+protocol TaskCompletedDelegate {
+    func taskCompleted(task: Task);
+}
+
