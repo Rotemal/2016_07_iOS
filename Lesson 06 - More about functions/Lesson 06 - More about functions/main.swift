@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import MyFramework
 
 func multiply(x: Int, _ by: Int)->Int{
     return x * by;
