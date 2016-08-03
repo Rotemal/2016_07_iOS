@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         
-        /*
+        
         alertController = UIAlertController(title: "title", message: "message", preferredStyle: .Alert);
         
         let actionDone = UIAlertAction(title: "Done", style: .Default) { [weak self](action: UIAlertAction) in
@@ -38,11 +38,12 @@ class ViewController: UIViewController {
         alertController.addTextFieldWithConfigurationHandler { (textField: UITextField) in
             textField.placeholder = "username";
             //self.txtUserName = textField;
+            //textField.secureTextEntry = true;
         }
         
         alertController.addAction(actionDone);
         alertController.addAction(actionCancel);
-        */
+        
         
         
         alertController = UIAlertController(title: "Choose how you would like to share this photo", message: "You cannot restore deleted photo", preferredStyle: .ActionSheet);
