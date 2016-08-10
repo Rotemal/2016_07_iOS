@@ -13,6 +13,7 @@
 		5117AA931D5B0D61000A38F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5117AA921D5B0D61000A38F6 /* Assets.xcassets */; };
 		5117AA961D5B0D61000A38F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5117AA941D5B0D61000A38F6 /* LaunchScreen.storyboard */; };
 		5117AA9E1D5B0DB3000A38F6 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5117AA9D1D5B0DB3000A38F6 /* SecondViewController.swift */; };
+		51C383AD1D5B3D76007B56F2 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C383AC1D5B3D76007B56F2 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5117AA951D5B0D61000A38F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5117AA971D5B0D61000A38F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5117AA9D1D5B0DB3000A38F6 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		51C383AC1D5B3D76007B56F2 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				5117AA941D5B0D61000A38F6 /* LaunchScreen.storyboard */,
 				5117AA971D5B0D61000A38F6 /* Info.plist */,
 				5117AA9D1D5B0DB3000A38F6 /* SecondViewController.swift */,
+				51C383AC1D5B3D76007B56F2 /* ThirdViewController.swift */,
 			);
 			path = "Lesson 09 - Navigation";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			files = (
 				5117AA9E1D5B0DB3000A38F6 /* SecondViewController.swift in Sources */,
 				5117AA8E1D5B0D61000A38F6 /* ViewController.swift in Sources */,
+				51C383AD1D5B3D76007B56F2 /* ThirdViewController.swift in Sources */,
 				5117AA8C1D5B0D61000A38F6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +295,7 @@
 				5117AA9C1D5B0D61000A38F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
